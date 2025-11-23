@@ -1,20 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
+## Code Review
 
-<h2>Code Review</h2>
+<style>
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  margin: auto;
+}
+.video-container iframe {
+  width: 100%;
+  height: 315px;
+}
+</style>
 
-<iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/6VAteyZ1Ic8?si=VWXGvajLnQp8uHrZ"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-</iframe>
-
-</body>
-</html>
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/6VAteyZ1Ic8?si=VWXGvajLnQp8uHrZ"
+      frameborder="0"
+      allowfullscreen>
+  </iframe>
+</div>
 
