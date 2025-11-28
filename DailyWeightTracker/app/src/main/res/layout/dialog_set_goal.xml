@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Goal Weight Input. -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_goal_weight"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:shapeAppearanceOverlay="@style/RoundedShapeAppearanceOverlay">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_goal_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Radio buttons -->
+    <RadioGroup
+        android:id="@+id/units_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Pounds (lbs) option. -->
+        <RadioButton
+            android:id="@+id/lbs_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pounds_lbs" />
+
+        <!-- Kilograms (kg) option. -->
+        <RadioButton
+            android:id="@+id/kg_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/kilograms_kg" />
+    </RadioGroup>
+
+</LinearLayout>

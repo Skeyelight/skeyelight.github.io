@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="headerLayout" type="id"/>
+    <item name="button_back" type="id"/>
+    <item name="weight_grid" type="id"/>
+    <item name="fab_add_weight" type="id"/>
+    <item name="popupOverlay" type="id"/>
+    <item name="textViewTitle" type="id"/>
+    <item name="inputWeightHome" type="id"/>
+    <item name="btnCancelHome" type="id"/>
+    <item name="btnSaveHome" type="id"/>
+    <item name="recent_weight_group" type="id"/>
+    <item name="label_recent_weight" type="id"/>
+    <item name="text_recent_weight" type="id"/>
+    <item name="text_recent_date" type="id"/>
+    <item name="button_group" type="id"/>
+    <item name="button_add_weight" type="id"/>
+    <item name="button_view_history" type="id"/>
+    <item name="button_sms_notifications" type="id"/>
+    <item name="popupAddWeight" type="id"/>
+    <item name="editTextUsername" type="id"/>
+    <item name="buttonContainer" type="id"/>
+    <item name="editTextPassword" type="id"/>
+    <item name="buttonLogin" type="id"/>
+    <item name="buttonSignUp" type="id"/>
+    <item name="buttonGuest" type="id"/>
+    <item name="permission_title" type="id"/>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/app_background"
+    tools:context=".HomeActivity">
+
+    <!-- Most recent weight entry display. -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shapeAppearanceOverlay="@style/RoundedShapeAppearanceOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/most_recent_weight" />
+
+            <TextView
+                android:id="@+id/text_recent_weight"
+                style="@style/TextAppearance.MaterialComponents.Headline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                tools:text="175.2 lbs" />
+
+            <TextView
+                android:id="@+id/text_recent_date"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                tools:text="2024-05-21" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Goal weight display. -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:shapeAppearanceOverlay="@style/RoundedShapeAppearanceOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goal_weight" />
+
+            <TextView
+                android:id="@+id/text_goal_weight"
+                style="@style/TextAppearance.MaterialComponents.Headline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                tools:text="160.0 lbs" />
+
+            <!-- Button to set or change the goal weight. -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_set_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/set_goal" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Action buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp">
+
+        <!-- Add a new weight entry. -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_add_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_new_weight"
+            app:shapeAppearanceOverlay="@style/RoundedShapeAppearanceOverlay"
+            tools:ignore="VisualLintButtonSize" />
+
+        <!-- View weight history. -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_view_history"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/view_weight_history"
+            app:shapeAppearanceOverlay="@style/RoundedShapeAppearanceOverlay"
+            tools:ignore="VisualLintButtonSize" />
+
+        <!-- Manage SMS notification settings. -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_sms_notifications"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/sms_notifications"
+            app:shapeAppearanceOverlay="@style/RoundedShapeAppearanceOverlay"
+            tools:ignore="VisualLintButtonSize" />
+
+        <!-- User's account settings. -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_account"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/settings"
+            app:shapeAppearanceOverlay="@style/RoundedShapeAppearanceOverlay"
+            tools:ignore="VisualLintButtonSize" />
+    </LinearLayout>
+
+</LinearLayout>
