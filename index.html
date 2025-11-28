@@ -1,16 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Video Page</title> <style>
+    <title>Thomas Davis - skeyelight.github.io</title> 
+    <style>
         body {
             text-align: center;
             font-family: Arial, sans-serif;
             background-color: #1a1a1a;
             color: white;
             padding-top: 50px;
+            padding-bottom: 50px; 
         }
         h1 {
             font-size: 48px;
@@ -26,6 +27,28 @@
             border: 2px solid white; 
             border-radius: 10px; 
             max-width: 90%;
+            margin-bottom: 40px; 
+        }
+
+        
+        .project-section {
+            margin-top: 20px;
+        }
+        .project-link {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            border: 2px solid white; 
+            border-radius: 10px;     
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .project-link:hover {
+            background-color: white;
+            color: #1a1a1a;
         }
     </style>
 </head>
@@ -44,6 +67,18 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         allowfullscreen>
     </iframe>
+
+    <div class="project-section">
+        <h3>My Projects</h3>
+        
+        <a class="project-link" href="https://github.com/Skeyelight/DailyWeightTracker" target="_blank">
+            Daily Weight Tracker (Java)
+        </a>
+
+        <a class="project-link" href="https://github.com/Skeyelight/DailyWeightTrackerKotlin" target="_blank">
+            Daily Weight Tracker (Kotlin)
+        </a>
+    </div>
 
 </body>
 </html>
