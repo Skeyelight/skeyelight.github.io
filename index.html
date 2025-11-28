@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas Davis - skeyelight.github.io</title> 
+    <title>Thomas Davis - Portfolio</title> 
     <style>
         body {
             text-align: center;
@@ -11,7 +11,7 @@
             background-color: #1a1a1a;
             color: white;
             padding-top: 50px;
-            padding-bottom: 50px; 
+            padding-bottom: 50px;
         }
         h1 {
             font-size: 48px;
@@ -27,25 +27,56 @@
             border: 2px solid white; 
             border-radius: 10px; 
             max-width: 90%;
-            margin-bottom: 40px; 
+            margin-bottom: 40px;
         }
 
-        
-        .project-section {
-            margin-top: 20px;
+        .project-card {
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 800px; 
+            width: 90%;
+            margin: 0 auto; 
+            text-align: left; 
+            background-color: #262626; 
         }
+
+        .project-title {
+            font-size: 28px;
+            margin-top: 0;
+            color: #ffffff;
+            border-bottom: 1px solid #555;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .project-description p {
+            font-size: 16px;
+            line-height: 1.6; 
+            color: #dddddd;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #555;
+        }
+
         .project-link {
             display: inline-block;
             margin: 10px;
-            padding: 15px 30px;
-            border: 2px solid white; 
-            border-radius: 10px;     
+            padding: 12px 25px;
+            border: 2px solid white;
+            border-radius: 5px;
             color: white;
             text-decoration: none;
-            font-size: 18px;
+            font-weight: bold;
             transition: background-color 0.3s, color 0.3s;
         }
-        
+
         .project-link:hover {
             background-color: white;
             color: #1a1a1a;
@@ -55,7 +86,6 @@
 <body>
 
     <h1>Thomas Davis</h1>
-
     <h2>skeyelight.github.io</h2>
 
     <iframe 
@@ -68,16 +98,42 @@
         allowfullscreen>
     </iframe>
 
-    <div class="project-section">
-        <h3>My Projects</h3>
+    <div class="project-card">
+        <h3 class="project-title">Software Design and Engineering Enhancement</h3>
         
-        <a class="project-link" href="https://github.com/Skeyelight/DailyWeightTracker" target="_blank">
-            Daily Weight Tracker (Java)
-        </a>
+        <div class="project-description">
+            
+            <p>
+                The artifact chosen for the Software Design and Engineering enhancement was a Daily Weight Tracking application that was written in Java for CS-360: Mobile Architect & Programming. 
+                It was created in October of 2025. I selected this artifact due to wanting to explore Kotlin as a programming language, and test my abilities in language migration, translating a program from Java to Kotlin. 
+                It was fresh in my memory, having just recently developed the application. I also wanted to improve on the application utilizing the newest features in Android development. Rewriting an entire application in 
+                a language that I had no formal knowledge of not only would showcase my ability to learn a new programming language but also highlight an ability to understand code structure and interpretation. 
+            </p>
 
-        <a class="project-link" href="https://github.com/Skeyelight/DailyWeightTrackerKotlin" target="_blank">
-            Daily Weight Tracker (Kotlin)
-        </a>
+            <p>
+                The artifact was improved by performing a complete rewrite into Kotlin, allowing for access to functions of Android development that Java programming does not have access to. Utilizing libraries and components 
+                that were developed specifically for Android and Kotlin. This project shows that I can utilize well-founded and innovative skills and techniques to implement solutions to accomplish industry specific goals. 
+            </p>
+
+            <p>
+                During this enhancement, I learned that jumping headfirst into a new programming language, even one that is derived from a language I am familiar with, is much more difficult than anticipated. 
+                I have developed a new appreciation for learning the basics of a language before diving headfirst into a more complex project. There were many times during development that I would make what I 
+                would have thought to be a simple change, and multiple areas of the project would begin to have issues. I felt that every time I added a new component, I would need to go back to previous components 
+                to update them or completely rewrite them because I had not correctly coded them previously. I was too reliant on my knowledge of Java while developing in Kotlin. This project has given me insight into 
+                the importance of having at least a base level knowledge of a programming language. 
+            </p>
+
+            </div>
+
+        <div class="button-container">
+            <a class="project-link" href="https://github.com/Skeyelight/DailyWeightTracker" target="_blank">
+                View Original Artifact Java Code
+            </a>
+
+            <a class="project-link" href="https://github.com/Skeyelight/DailyWeightTrackerKotlin" target="_blank">
+                View Enhancement Kotlin Code
+            </a>
+        </div>
     </div>
 
 </body>
