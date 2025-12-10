@@ -126,12 +126,55 @@
             </div>
 
         <div class="button-container">
-            <a class="project-link" href="https://github.com/Skeyelight/DailyWeightTracker" target="_blank">
-                View Original Artifact Java Code
+            <a class="project-link" href="https://github.com/Skeyelight/skeyelight.github.io/tree/main/DailyWeightTracker" target="_blank">
+                View Original Artifact
             </a>
 
-            <a class="project-link" href="https://github.com/Skeyelight/DailyWeightTrackerKotlin" target="_blank">
-                View Enhancement Kotlin Code
+            <a class="project-link" href="https://github.com/Skeyelight/skeyelight.github.io/tree/main/DailyWeightTrackerKotlin" target="_blank">
+                View Enhancement
+            </a>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="project-card">
+        <h3 class="project-title">Algorithms and Data Structures Enhancement</h3>
+        
+        <div class="project-description">
+            
+            <p>
+                The artifact chosen for this enhancement was an OpenGL 3D scene that was created for CS-330: Comp Graphic and Visualization. This artifact was created August 22nd, 2025. I selected this artifact as I felt this 
+                was the best artifact to showcase implementing a data structure and algorithm, where previously one did not exist. This artifact originally drew each 3D object individually and contained no relationships between 
+                the objects in the scene. With the enhancements I made to the RenderScene method every object is now related through a hierarchical structure using parent-child relationship and stored in a vector. DrawNode then 
+                traverses through the vector drawing each object. I also incorporated a method for using more complex 3D objects through tinygltf. This can be seen in Model.h and Model.cpp. When recreating the scene, I choose to 
+                use a single Creative Commons complex model for the planchette, instead of using several simple objects. I added a check in CreateGLTexture to prevent too many textures from being loaded, causing data errors, and 
+                refactored LoadSceneTextures. Previously LoadSceneTextures loaded each texture individually, with each texture calling the CreateGLTexture method. This has been altered to be one loop, that loads all the textures in a list. 
+            </p>
+
+            <p>
+                I was able to successfully meet all the planned enhancements and even went a little further by adding the ability to use complex models. This project shows that I understand data structures and algorithms, and how to implement 
+                them into an existing artifact. The enhancement presents evidence of using algorithmic principles and computer science practices while managing trade-offs. 	
+            </p>
+
+            <p>
+                As opposed to my previous enhancement, this was very straightforward and utilized aspects of C++ I was familiar with. Leaning into my strengths to create this enhancement allowed me to approach modifying this artifact with confidence. 
+                Approaching artifacts with this mindset would allow me to create a stronger ePortfolio and showcase my skills easier. Since this enhancement did require me to rebuild my 3D scene, I learned more about scale and ratios in 3D rendering. 
+                When I initially created this artifact for my previous course, creating the scene was mostly trial and error. Spending more time with the scene and having to take the hierarchy into consideration allowed me to gain a better understanding 
+                of the different values associated with 3D objects. The largest challenge I faced was trying to recreate the planchette from the previous version of the artifact. My planchette was made from seven different simple objects, scaled and positioned 
+                to be aligned just right. After utilizing the hierarchical structure, even small changes to scale and position could cause a larger than anticipated change in the objects. Instead of spending many hours positioning each of these objects correctly, 
+                I instead found a method for implementing complex objects into OpenGL through tinygltf. Not only did this allow me to quickly scale and position the complex planchette quickly, but this also allows for other complex objects to be utilized in the future.  
+            </p>
+
+            </div>
+
+        <div class="button-container">
+            <a class="project-link" href="https://github.com/Skeyelight/skeyelight.github.io/tree/main/CS330Content" target="_blank">
+                View Original Artifact 
+            </a>
+
+            <a class="project-link" href="https://github.com/Skeyelight/skeyelight.github.io/tree/main/Algorithms%20and%20Data%20Structure" target="_blank">
+                View Enhancement
             </a>
         </div>
     </div>
